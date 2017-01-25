@@ -7,90 +7,61 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<table class="table">
+			<h1>Basic npm commands</h1>
+			<table class="table table-bordered table-hover table-striped">
 				<thead>
-					<tr>
-						<th>
-							#
-						</th>
-						<th>
-							Product
-						</th>
-						<th>
-							Payment Taken
-						</th>
-						<th>
-						</th>
+					<tr class="info">
+						<th>Command</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-						</td>
+						<td>npm install</td>
+						<td>install dependencies located in root package.json file.</td>
 					</tr>
-					<tr class="active">
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-						</td>
+					<tr>
+						<td>npm start</td>
+						<td>start the script inside package.json file</td>
 					</tr>
-					<tr class="success">
-						<td>
-							2
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							02/04/2012
-						</td>
-						<td>
-						</td>
+					<tr>
+						<td>npm install -g xyz</td>
+						<td>install the dependecy globally in OS with path environment</td>
 					</tr>
-					<tr class="warning">
-						<td>
-							3
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							03/04/2012
-						</td>
-						<td>
-						</td>
+					<tr>
+						<td>npm install xyz</td>
+						<td>install the dependency locally in root of the application folder</td>
 					</tr>
-					<tr class="danger">
-						<td>
-							4
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							04/04/2012
-						</td>
-						<td>
-						</td>
+					<tr>
+						<td>npm install xyz --save</td>
+						<td>install the dependency and update package.json for only production dependency</td>
+					</tr>					
+					<tr>
+						<td>npm install xyz --save-dev</td>
+						<td>install the dependency and update package.json with only devlopment dependency</td>
+					</tr>
+					<tr>
+						<td>npm uninstall xyz</td>
+						<td>uninstall the dependency</td>
+					</tr>
+					<tr>
+						<td>npm ls -g depth=0</td>
+						<td>show the list of all dependencies globally without any subdependency (depth=0)</td>
+					</tr>
+					<tr>
+						<td>npm ls depth=0</td>
+						<td>show the list of all dependencies lobally without any subdependency (depth=0)</td>
+					</tr>
+					<tr>
+						<td>npm install --dry-run</td>
+						<td>Test & Show the full dependency tree</td>
+					</tr>
+					<tr>
+						<td>npm outdated</td>
+						<td>List outdated libraries compared to currently installe node_modules:</td>
 					</tr>
 				</tbody>
 			</table>
